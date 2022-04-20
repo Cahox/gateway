@@ -15,6 +15,26 @@ spring:
           uri: lb://CONTRACT-SERVICE
           predicates:
             - Path=/contracts/**
+        - id: POST-SERVICE
+          uri: lb://POST-SERVICE
+          predicates:
+            - Path=/posts/**
+        - id: COMMENT-SERVICE
+          uri: lb://COMMENT-SERVICE
+          predicates:
+            - Path=/comments/**
+        - id: CHAT-SERVICE
+          uri: lb://CHAT-SERVICE
+          predicates:
+            - Path=/chats/**
+        - id: GAME-SERVICE
+          uri: lb://GAME-SERVICE
+          predicates:
+            - Path=/games/**
+        - id: NOTIFICATION-SERVICE
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path=/notifications/**
 
 eureka:
   client:
