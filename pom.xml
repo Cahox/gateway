@@ -16,6 +16,9 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
+		<sonar.organization>sem6-clashbots</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.projectKey>sem6-clashbots_gateway</sonar.projectKey>
 	</properties>
 	<dependencies>
 		<dependency>
