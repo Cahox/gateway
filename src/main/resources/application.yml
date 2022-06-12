@@ -60,6 +60,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: 10.44.2.10
+      defaultZone: 10.48.3.92
   instance:
     hostname: localhost
