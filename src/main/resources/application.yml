@@ -42,7 +42,7 @@ spring:
       globalcors:
         cors-configurations:
           '[/**]':
-            allowedOrigins: "http://localhost:3000"
+            allowedOrigins: "https://cb-game-platform.herokuapp.com/"
             allowedHeaders: "*"
             allowedMethods:
               - GET
