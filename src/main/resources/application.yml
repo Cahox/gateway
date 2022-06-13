@@ -50,14 +50,14 @@ spring:
               - DELETE
               - PUT
 
-management:
-  endpoint:
-    health:
-      enabled: true
+#management:
+#  endpoint:
+#    health:
+#      enabled: true
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://10.8.65.168:8761/eureka/
+      defaultZone: http://10.8.34.199:8761/eureka/
