@@ -62,4 +62,4 @@ eureka:
     service-url:
       defaultZone: http://10.8.49.128:8761/eureka/
   instance:
-    hostname: gateway
+    hostname: https://gateway-cahox.cloud.okteto.net
