@@ -60,6 +60,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://service-registry-cahox.cloud.okteto.net/eureka/
+      defaultZone: http://10.8.65.168:8761/eureka/
   instance:
     hostname: https://gateway-cahox.cloud.okteto.net
