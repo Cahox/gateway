@@ -5,11 +5,11 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "true"
   labels:
-    app: gateway
+    app: clashbots
 spec:
   type: ClusterIP
   ports:
     - name: gateway
       port: 9191
   selector:
-    app: gateway
+    app: clashbots
