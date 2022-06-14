@@ -1,0 +1,32 @@
+name: gateway
+
+on:
+  push:
+    branches:
+      - main
+      - okteto
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: context
+        uses: okteto/context@latest
+        with:
+          token: ${{ secrets.OKTETO_TOKEN }}
+
+      - name: "Activate Namespace"
+        uses: okteto/namespace@latest
+        with:
+          namespace: cahox
+
+      - name: "trigger pipeline to deploy"
+        uses: okteto/pipeline@latest
+        with:
+          name: gateway
+          filename: .github/okteto-pipeline.yml
